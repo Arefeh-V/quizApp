@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+html {
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+html {
+  height: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  margin: 0;
 }
+.main_page {
+  background-image: url("../public/images/jessica-lewis-8T-lK9FkzyI-unsplash.jpg");
+  /* Add the blur effect */
+  /* filter: blur(1px); */
+  /* -webkit-filter: blur(1px); */
 
-.App-link {
-  color: #61dafb;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.question_box {
+  margin: 150px 0 150px 0;
+  padding: 20px 50px 20px 50px;
+  min-height: 600px;
+  min-height: 600px;
+  background-color: rgb(165 136 100 / 70%);
+  border-radius: 16px;
 }
