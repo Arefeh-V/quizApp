@@ -8,7 +8,7 @@ import QuestionCard from "./QuestionCard";
 const Main = () => {
   // console.log()
   //
-  const QuestionNO = 3;
+  const QuestionNO = 10;
   const [started, setStarted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [questionsData, setQuestionsData] = useState<QuestionState[]>([]);

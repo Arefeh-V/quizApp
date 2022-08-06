@@ -21,7 +21,9 @@ const QuestionCard: React.FC<Props> = ({
   const [answer, setAnswer] = useState("");
   return (
     <Box textAlign="start" sx={{ maxWidth: "450px" }}>
-      <p>{question}</p>
+      <Box fontWeight={600} sx={{ my: "20px" }}>
+        {question}
+      </Box>
       <div>
         {answers?.map((item, index) => (
           <div key={index}>
@@ -32,7 +34,9 @@ const QuestionCard: React.FC<Props> = ({
                 callback(e);
                 setAnswer(e.currentTarget.value);
               }}
-              style={{ color: answer === item ? "orange" : "inherit" }}
+              color="inherit"
+              variant="text"
+              style={{ fontWeight: answer === item ? "600" : "normal" }}
             >
               {item}
             </Button>
